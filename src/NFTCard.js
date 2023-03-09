@@ -57,6 +57,7 @@ const NFTCard = ({ nft }) => {
                     <a href = {`https://opensea.io/assets/${url}`} >
                     <button class="modal__btn">Buy On Opensea &rarr;</button>
                     </a>
+                    <a class="link-2"></a>
                 </div>
             </div>
             )}
