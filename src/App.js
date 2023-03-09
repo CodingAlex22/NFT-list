@@ -11,8 +11,6 @@ function App() {
   //Sets the input value to local storage by setting the input to "value"
   let [value, setValue] = useLocalStorage('name', '');
 
-  const [walletAddress, setWalletAddress] = useState(null)
-
   //Sets the NFT JSON parameters from the API fetch call
   const [nfts, setNfts] = useState([]);
 
@@ -31,10 +29,6 @@ function App() {
 
         setNfts(data.items)
   }
-
-  useEffect(() => {
-    getNftData()
-  }, [walletAddress])
   
   return (
     <div className="App">
